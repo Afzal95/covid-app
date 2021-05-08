@@ -17,7 +17,7 @@ function Todo(){
         const result = await request.get(`/findByPin?pincode=${pin}&date=${date1}`).catch(err=>setError(true));
 //        console.log(result.data.sessions);
         if(result.data.sessions.length==0){
-            return alert("seems pin/date is wrong or no data for this pin")
+            return alert("seems pin/date is wrong or drive not started at given date")
             
         }
         setData(result.data.sessions);
