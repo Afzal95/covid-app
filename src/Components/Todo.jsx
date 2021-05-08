@@ -52,7 +52,7 @@ function Todo(){
 
     }
         return  <div>
-                <input style={{borderRadius:"20px",outline:"none",padding:"6px"}} 
+                <input style={{borderRadius:"20px",outline:"none",padding:"6px",marginLeft:"-50px"}} 
                 type="number" value={pin} name="pin" onChange={e=>setPin(e.target.value)}
                 placeholder="type pincode" /><br/>
                 <input style={{borderRadius:"20px",outline:"none",backgroundColor:"lightgrey",padding:"2px",marginTop:"10px"}} type="date" name="date" min="01-01-2018" max="31-12-2030" value={date} onChange={handleChange} placeholder="add something..." />
