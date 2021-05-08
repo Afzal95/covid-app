@@ -8,7 +8,7 @@ function App() {
     <div className="App">
     <h1 className="Apph1">Covid Vaccination Center Details & Registeration </h1>
     <p>
-    <ul style={{listStyleType:"none",color:"yellowgreen"}}>
+    <ul style={{listStyleType:"none",color:"yellowgreen",marginLeft:"-70px"}}>
       <li>
         1-enter your correct pincode.
       </li>
@@ -18,7 +18,7 @@ function App() {
       </ul>
     </p>
     <Todo />
-    <p style={{position:"fixed",bottom:"10px",marginLeft:"75%"}}>created by : <a style={{textDecoration:"none"}} href="https://afzal95.github.io/my_site/" target="_blank">Afzal Ahmad</a></p>
+    <p className="created">created by : <a style={{textDecoration:"none"}} href="https://afzal95.github.io/my_site/" target="_blank">Afzal Ahmad</a></p>
     </div>
   );
 }
