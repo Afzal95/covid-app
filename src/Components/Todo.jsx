@@ -17,7 +17,7 @@ function Todo(){
         const result = await request.get(`/findByPin?pincode=${pin}&date=${date1}`).catch(err=>setError(true));
 //        console.log(result.data.sessions);
         if(result.data.sessions.length==0){
-            return alert("seems pin/date is wrong!")
+            return alert("seems pin/date is wrong or no data for this pin")
             
         }
         setData(result.data.sessions);
@@ -38,13 +38,13 @@ function Todo(){
 
     const handleClick= async()=>{
         if(pin==""){
-            alert("sorry! afzal says pin is empty");
+            alert("pin can't br empty");
             return
         } else if(pin.length!==6){
-            alert("sorry! afzal says pin should be of 6 numbers");
+            alert("pin should be of 6 numbers");
             return            
         }else if(date==""){
-            alert("sorry! afzal says please select date. ");
+            alert("please select date. ");
             return
         }
 
