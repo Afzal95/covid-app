@@ -1,0 +1,70 @@
+.card {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.border {
+  width: 1000px;
+  text-align: center;
+  border: 1px solid green;
+  justify-content: center;
+  margin: 20px auto 10px 90px;
+  color: rgb(22, 71, 177);
+  box-shadow: inset -12px -8px 40px #464646;
+}
+.border:hover {
+  background-color: rgb(241, 227, 227);
+  /* box-shadow: 5px 5px rgba(0, 98, 90, 0.4), 10px 10px rgba(0, 98, 90, 0.3),
+    15px 15px rgba(0, 98, 90, 0.2), 20px 20px rgba(0, 98, 90, 0.1),
+    25px 25px rgba(0, 98, 90, 0.05); */
+}
+
+h3 {
+  color: black;
+}
+p {
+  font-size: 20px;
+}
+a {
+  color: rgb(7, 170, 7);
+}
+.reg {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  color: black;
+}
+.reg:hover {
+  color: rgb(35, 216, 35);
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 500px;
+    justify-content: left;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 45vw 35vw;
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+  .border {
+    width: 400px;
+    text-align: left;
+    border: 1px solid green;
+    /* justify-content: center; */
+    margin: 0;
+    color: rgb(22, 71, 177);
+    /* box-shadow: inset -12px -8px 40px #464646; */
+  }
+  h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+  h4 {
+    color: rgb(78, 77, 77);
+  }
+}
